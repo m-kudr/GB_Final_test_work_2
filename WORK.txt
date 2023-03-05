@@ -1,0 +1,48 @@
+1)
+pwd
+cat > "Домашние животные"
+собака
+кошка
+хомяк
+
+cat "Домашние животные"
+лошадь
+верблюд
+осёл
+
+cat "Домашние животные" "Вьючные животные" > "Животные"
+cat "Животные"
+mv "Животные" "Друзья человека"
+
+2)
+mkdir Animals
+mv "Друзья человека" Animals
+
+3)
+sudo add-apt-repository ppa:sergey-dryabzhinsky/packages
+sudo apt update
+add-apt-repository -L
+sudo apt install mysqltuner
+sudo add-apt-repository -r ppa:sergey-dryabzhinsky/packages
+add-apt-repository -L
+
+4)
+wget http://repo.mysql.com/mysql-apt-config_0.8.10-1_all.deb 
+sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb 
+apt -f install
+dpkg -P virtualbox-6.1
+apt autoremove
+
+5)
+history
+
+6)
+UML-диаграмма
+
+7)
+sudo mysql
+SHOW DATABASES;
+CREATE DATABASE Friends_of_man;
+
+8)
+
