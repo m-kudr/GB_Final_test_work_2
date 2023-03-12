@@ -18,13 +18,12 @@ public class Main {
         petAnimalArrayList.add(addPetAnimal("хомяк", "04-04-2012", "Персик"));
         System.out.println("Кол-во животных в питомнике: " + count.get());
 
-        petAnimalArrayList.get(2).addCommand("Сидеть");
-        petAnimalArrayList.get(2).addCommand("Лежать");
-        petAnimalArrayList.get(2).addCommand("Голос");
+//        petAnimalArrayList.get(2).addCommand("Сидеть");
+//        petAnimalArrayList.get(2).addCommand("Лежать");
+//        petAnimalArrayList.get(2).addCommand("Голос");
+//        printAllPetCommands(petAnimalArrayList.get(2));
 
-        printAllPets(petAnimalArrayList); // вывод всех домашних животных
-
-        printAllPetCommands(petAnimalArrayList.get(2));
+        Printable.printAllPets(petAnimalArrayList); // вывод всех домашних животных
     }
 
     /*
@@ -33,20 +32,6 @@ public class Main {
     public static PetAnimal addPetAnimal(String name, String birthday, String nickName) {
         count.add(); // увеличиваем счётчик животных
         return new PetAnimal(name, birthday, nickName);
-    }
-
-    public static void print(PetAnimal animal) {
-        System.out.println("--------------------------------");
-        System.out.println("Вид: " + animal.getName());
-        System.out.println("Дата рождения: " + animal.getBirthday());
-        System.out.println("Кличка: " + animal.getNickname());
-        System.out.println("Знает команд: " + animal.getCommandsCount());
-    }
-
-    public static void printAllPets(ArrayList<PetAnimal> pets) {
-        for (PetAnimal item : pets) {
-            print(item);
-        }
     }
 
     public static void printAllPetCommands(PetAnimal pets) {

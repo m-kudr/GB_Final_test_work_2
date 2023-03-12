@@ -1,7 +1,4 @@
-/*
-класс счётчик
- */
-public class Counter {
+public class Counter {  //класс счётчик
     int count;
 
     public Counter() {
