@@ -9,6 +9,9 @@ public class Counter {  //класс счётчик
         this.count = count + 1;
     }
 
+    public void decrease() {
+        this.count = count - 1;
+    }
     public int get() {
         return count;
     }
